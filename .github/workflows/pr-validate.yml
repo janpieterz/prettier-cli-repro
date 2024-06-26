@@ -19,4 +19,5 @@ jobs:
       - name: Clean Install NPM
         run: npm ci
       - name: Run Prettier formatting
+        shell: 'script --return --quiet --command "bash {0}"'
         run: npx prettier --write .
